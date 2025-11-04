@@ -45,12 +45,15 @@
 
     #event_deltapro .inner-box {position:relative;width:100%;}
 
+    #event_deltapro.event_pc .section01 .fade-unit:last-child {animation:visualFade 5s infinite ease-in-out;}
     #event_deltapro.event_pc .section01 .motion-text {bottom:23.6979%;left:0;width: 100%;}
 
     #event_deltapro.event_pc .section02 .motion-text {bottom:14.7395%;left:0;width: 100%;}
     #event_deltapro.event_pc .section02 .wave-box {display:flex;flex-wrap:wrap;flex-direction:row;justify-content:flex-start;align-items:center;bottom:8.65%;left:0;width:220%;animation:waveImg 20s infinite linear;}
     #event_deltapro.event_pc .section02 .wave-box img {width:50%;}
 
+    #event_deltapro.event_pc .section03 .fade-unit{width:48.33%; left: 5.73%;}
+    #event_deltapro.event_pc .section03 .fade-unit:last-child {animation:visualFade 5s infinite ease-in-out;}
     #event_deltapro.event_pc .section03 .motion-img01 {top:0;left:0;width:54.06%;}
     #event_deltapro.event_pc .section03 .motion-img02 {top:10.65%;right:0;width:58.3333%;}
     #event_deltapro.event_pc .section03 .motion-img03 {top:35.57%;left:0;width:52.0833%;}
@@ -59,7 +62,8 @@
     #event_deltapro.event_pc .section03 .wave-box {display:flex;flex-wrap:wrap;flex-direction:row;justify-content:flex-start;align-items:center;bottom:0.85%;left:0;width:220%;animation:waveImg 20s infinite linear;}
     #event_deltapro.event_pc .section03 .wave-box img {width:50%;}
 
-    #event_deltapro.event_pc .section04 .motion-img {top:8.98%;right:6.1458%;width:46.3542%;}
+    #event_deltapro.event_pc .section04 .fade-unit{top: 9.04%; width: 100%;}
+    #event_deltapro.event_pc .section04 .fade-unit:last-child {animation:visualFade 5s infinite ease-in-out;}
     #event_deltapro.event_pc .section04 .motion-text {bottom:0;left:0;width:100%;}
 
     @keyframes visualFade {
@@ -96,13 +100,17 @@
 <div class="event_wrap event_pc" id="event_deltapro">
     <div class="event-area section01">
         <img src="images/pc_01.jpg" alt="">
+         <div class="fade-box absolute-box unit-full">
+            <div class="fade-unit absolute-box unit-full"><img src="images/pc_01_a.jpg" alt=""></div>
+            <div class="fade-unit absolute-box unit-full"><img src="images/pc_01_b.jpg" alt=""></div>
+        </div>
         <div class="motion-box motion-text fadeInLeft absolute-box active">
             <img src="images/pc_01_text.png" alt="">
         </div>
     </div>
     <div class="event-area section02">
         <img src="images/pc_02.jpg" alt="">
-        <div class="motion-box motion-text01 fadeInUp absolute-box">
+        <div class="motion-box motion-text fadeInUp absolute-box">
             <img src="images/pc_02_text.png" alt="">
         </div>
         <div class="wave-box absolute-box">
@@ -112,6 +120,10 @@
     </div>
     <div class="event-area section03">
         <img src="images/pc_03.jpg" alt="">
+        <div class="fade-box absolute-box unit-full motion-box fadeInUp">
+            <div class="fade-unit absolute-box unit-full"><img src="images/pc_03_a.jpg" alt=""></div>
+            <div class="fade-unit absolute-box unit-full"><img src="images/pc_03_b.png" alt=""></div>
+        </div>
         <div class="motion-box motion-img01 fadeInLeft absolute-box">
             <img src="images/pc_03_img01.jpg" alt="">
         </div>
@@ -134,8 +146,9 @@
     </div>
     <div class="event-area section04">
         <img src="images/pc_04.jpg" alt="">
-        <div class="motion-box motion-img fadeInRight absolute-box">
-            <img src="images/pc_04_img.jpg" alt="">
+        <div class="fade-box absolute-box unit-full">
+            <div class="fade-unit absolute-box unit-full"><img src="images/pc_04_a.png" alt=""></div>
+            <div class="fade-unit absolute-box unit-full"><img src="images/pc_04_b.png" alt=""></div>
         </div>
         <div class="motion-box motion-text fadeInUp absolute-box">
             <img src="images/pc_04_text.png" alt="">
